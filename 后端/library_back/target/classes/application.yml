@@ -1,0 +1,19 @@
+#指定前端页面请求的服务器端口号
+server:
+  port: 8081
+spring:
+  #利用 Spring 添加数据源信息
+  datasource:
+    #使用jdbc的驱动方式连接数据库
+    url: jdbc:mysql://localhost:3308/book?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: hanmengdi130
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true  #打印sql
+    properties:
+      hibernate:
+        format_sql: true #格式化sql,如果不格式化sql语句直接显示一行，format具有自动换行的功能
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

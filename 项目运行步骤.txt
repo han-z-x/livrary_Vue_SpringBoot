@@ -1,0 +1,19 @@
+第一步：将后端项目：library_back 以 open 的方式导入 IDEA 中（第一个 idea 窗口）
+
+第二步：将前端项目：library_font  以 open 的方式导入 IDEA 中（第一个 idea 窗口）
+
+第三步：将 book.sql 文件导入到 Navicate premium 中
+
+第四步：在后端项目：library_back 中修改 application.yml 文件，
+             application.yml 文件中的数据库以及登录数据库的账号和密码应该与所需要连接的数据库相匹配
+
+第五步：运行后端项目：运行 Java 包下的 LibraryApplication.java 类或者创建对应的Spring Boot项目启动装置
+                                
+第六步：运行前端项目：
+             1、下载 Vue.js 插件：File-->settings-->plugins-->在Marketplace下输入（Vue.js），
+             2、安装 node.js 插件
+             3、在 IDEA 前端项目控制台输入 ：npm install ，安装 Vue 项目运行所需要的环境
+             4、安装好所需要的环境之后，在 IDEA 前端项目控制台输入 ：npm run dev，启动项目（注意：后端项目必需要运行起来）
+             5、前后端项目成功运行之后，前端项目会出现一个链接，点击该链接，会出现在系统的注册和登录页面，说明项目成功运行。
+
+第七步：同时运行前后端项目后，项目成功运行后，会在前端项目的 idea 控制台出现一个链接，点击该链接便可以进入到系统注册和登录页面。
